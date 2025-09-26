@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
-from app.features.ai.ai_func import get_recipe_response
+from app.features.chat.ai_func import get_recipe_response
 
 from .models import Ai_model_logs, ChatMessage, ChatSession
 from .serializers import (
