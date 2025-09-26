@@ -17,12 +17,8 @@ from _core.settings.settings_tweaks.app_config import (
 )
 from _core.settings.settings_tweaks.caches_config import LOCAL_CACHE_CONFIG
 from _core.settings.settings_tweaks.dashboard import JAZZMIN_DISPAY_SETTING
-from _core.settings.settings_tweaks.db_config import (
-    LOCAL_POSTGRESQL_CONFIG,
-    LOCAL_SQLITE_CONFIG,
-)
+from _core.settings.settings_tweaks.db_config import LOCAL_POSTGRESQL_CONFIG
 from _core.settings.settings_tweaks.django_admin_env_notice_config import *  # noqa: F403
-from _core.settings.settings_tweaks.logging_settings import LOGGER_SETTINGS
 from _core.settings.settings_tweaks.middleware_config import LOCAL_MIDDLEWARE_ADDED
 from _core.settings.settings_tweaks.network_ip_config import (
     LOCAL_ALLOWED_HOST,
