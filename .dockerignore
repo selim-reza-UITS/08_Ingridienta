@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs
+*.log
+logs/
+
+# Virtualenv
+venv/
+.env
+.opt/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Git
+.git
+.gitignore
+
+# Static files (built ones)
+staticfiles/

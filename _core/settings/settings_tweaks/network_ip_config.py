@@ -1,0 +1,11 @@
+# 
+LOCAL_ALLOWED_HOST = ["*"]
+PRODUCTION_ALLOWED_HOST = []
+# 
+LOCAL_INTERNAL_IP = [
+    "127.0.0.1",
+    "192.168.10.40",
+]
+
+# 
+# CORS_

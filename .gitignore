@@ -1,0 +1,8 @@
+# Ignore all Python cache
+__pycache__/
+
+# Keep migrations folder, but ignore everything except __init__.py
+**/migrations/*
+!**/migrations/__init__.py
+db.sqlite3
+.env
