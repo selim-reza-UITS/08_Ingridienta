@@ -37980,3 +37980,113 @@ rest_framework_simplejwt.exceptions.TokenError: Token is invalid or expired
 [2025-09-26 12:18:10,135] INFO [myproject] ➡️  GET /api/v1/ai-model-logs/ | IP: 10.10.13.12
 [2025-09-26 12:18:10,236] INFO [myproject] ⬅️  200 GET /api/v1/ai-model-logs/ | ⏱️ 0.10s
 [2025-09-26 12:18:10,237] INFO [django.server] "GET /api/v1/ai-model-logs/ HTTP/1.1" 200 17823
+[2025-09-26 12:22:41,540] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:22:41,641] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.10s
+[2025-09-26 12:22:41,641] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:22:41,695] INFO [myproject] ➡️  OPTIONS /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:22:41,789] INFO [myproject] ⬅️  200 OPTIONS /api/v1/admin/privacy/ | ⏱️ 0.09s
+[2025-09-26 12:22:41,789] INFO [django.server] "OPTIONS /api/v1/admin/privacy/ HTTP/1.1" 200 0
+[2025-09-26 12:22:41,847] INFO [myproject] ➡️  GET /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:22:41,956] INFO [myproject] ⬅️  404 GET /api/v1/admin/privacy/ | ⏱️ 0.11s
+[2025-09-26 12:22:41,956] WARNING [django.request] Not Found: /api/v1/admin/privacy/
+[2025-09-26 12:22:41,956] WARNING [django.server] "GET /api/v1/admin/privacy/ HTTP/1.1" 404 14483
+[2025-09-26 12:23:09,059] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:23:09,158] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.10s
+[2025-09-26 12:23:09,158] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:23:09,214] INFO [myproject] ➡️  PATCH /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:23:09,320] INFO [myproject] ⬅️  404 PATCH /api/v1/admin/privacy/ | ⏱️ 0.11s
+[2025-09-26 12:23:09,320] WARNING [django.request] Not Found: /api/v1/admin/privacy/
+[2025-09-26 12:23:09,320] WARNING [django.server] "PATCH /api/v1/admin/privacy/ HTTP/1.1" 404 14485
+[2025-09-26 12:23:18,147] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:23:18,251] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.10s
+[2025-09-26 12:23:18,251] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:23:18,304] INFO [myproject] ➡️  PATCH /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:23:18,410] INFO [myproject] ⬅️  404 PATCH /api/v1/admin/privacy/ | ⏱️ 0.11s
+[2025-09-26 12:23:18,410] WARNING [django.request] Not Found: /api/v1/admin/privacy/
+[2025-09-26 12:23:18,410] WARNING [django.server] "PATCH /api/v1/admin/privacy/ HTTP/1.1" 404 14485
+[2025-09-26 12:23:23,260] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:23:23,370] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 12:23:23,370] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:23:23,419] INFO [myproject] ➡️  PATCH /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:23:23,531] INFO [myproject] ⬅️  404 PATCH /api/v1/admin/privacy/ | ⏱️ 0.11s
+[2025-09-26 12:23:23,531] WARNING [django.request] Not Found: /api/v1/admin/privacy/
+[2025-09-26 12:23:23,531] WARNING [django.server] "PATCH /api/v1/admin/privacy/ HTTP/1.1" 404 14485
+[2025-09-26 12:27:16,429] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:27:16,534] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 12:27:16,534] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:27:16,579] INFO [myproject] ➡️  PATCH /api/v1/admin/privacy/ | IP: 10.10.13.12
+[2025-09-26 12:27:16,687] INFO [myproject] ⬅️  404 PATCH /api/v1/admin/privacy/ | ⏱️ 0.11s
+[2025-09-26 12:27:16,687] WARNING [django.request] Not Found: /api/v1/admin/privacy/
+[2025-09-26 12:27:16,687] WARNING [django.server] "PATCH /api/v1/admin/privacy/ HTTP/1.1" 404 14485
+[2025-09-26 12:30:53,429] INFO [django.utils.autoreload] Watching for file changes with StatReloader
+[2025-09-26 12:31:03,556] INFO [myproject] ➡️  GET / | IP: 127.0.0.1
+[2025-09-26 12:31:03,649] INFO [myproject] ⬅️  200 GET / | ⏱️ 0.09s
+[2025-09-26 12:31:03,649] INFO [django.server] "GET / HTTP/1.1" 200 15759
+[2025-09-26 12:31:03,661] INFO [myproject] ➡️  GET /static/drf-yasg/style.css | IP: 127.0.0.1
+[2025-09-26 12:31:03,662] INFO [myproject] ➡️  GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css | IP: 127.0.0.1
+[2025-09-26 12:31:03,662] INFO [myproject] ➡️  GET /static/debug_toolbar/css/toolbar.css | IP: 127.0.0.1
+[2025-09-26 12:31:03,664] INFO [myproject] ➡️  GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,665] INFO [myproject] ➡️  GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,668] INFO [myproject] ➡️  GET /static/drf-yasg/insQ.min.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,697] INFO [myproject] ⬅️  200 GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js | ⏱️ 0.03s
+[2025-09-26 12:31:03,703] INFO [myproject] ⬅️  200 GET /static/debug_toolbar/css/toolbar.css | ⏱️ 0.04s
+[2025-09-26 12:31:03,705] INFO [myproject] ⬅️  200 GET /static/drf-yasg/style.css | ⏱️ 0.04s
+[2025-09-26 12:31:03,706] INFO [django.server] "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+[2025-09-26 12:31:03,711] INFO [myproject] ⬅️  200 GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css | ⏱️ 0.05s
+[2025-09-26 12:31:03,712] INFO [myproject] ⬅️  200 GET /static/drf-yasg/insQ.min.js | ⏱️ 0.04s
+[2025-09-26 12:31:03,713] INFO [django.server] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16675
+[2025-09-26 12:31:03,713] INFO [django.server] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+[2025-09-26 12:31:03,716] INFO [myproject] ⬅️  200 GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js | ⏱️ 0.05s
+[2025-09-26 12:31:03,716] INFO [myproject] ➡️  GET /static/drf-yasg/immutable.min.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,716] INFO [myproject] ➡️  GET /static/drf-yasg/swagger-ui-init.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,719] INFO [django.server] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+[2025-09-26 12:31:03,720] INFO [django.server] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+[2025-09-26 12:31:03,724] INFO [django.server] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+[2025-09-26 12:31:03,732] INFO [myproject] ⬅️  200 GET /static/drf-yasg/immutable.min.js | ⏱️ 0.02s
+[2025-09-26 12:31:03,734] INFO [myproject] ⬅️  200 GET /static/drf-yasg/swagger-ui-init.js | ⏱️ 0.02s
+[2025-09-26 12:31:03,735] INFO [django.server] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+[2025-09-26 12:31:03,735] INFO [django.server] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+[2025-09-26 12:31:03,748] INFO [myproject] ➡️  GET /static/debug_toolbar/js/toolbar.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,755] INFO [myproject] ⬅️  200 GET /static/debug_toolbar/js/toolbar.js | ⏱️ 0.01s
+[2025-09-26 12:31:03,755] INFO [django.server] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+[2025-09-26 12:31:03,832] INFO [myproject] ➡️  GET /static/debug_toolbar/css/print.css | IP: 127.0.0.1
+[2025-09-26 12:31:03,833] INFO [myproject] ➡️  GET /static/debug_toolbar/js/utils.js | IP: 127.0.0.1
+[2025-09-26 12:31:03,843] INFO [myproject] ⬅️  200 GET /static/debug_toolbar/css/print.css | ⏱️ 0.01s
+[2025-09-26 12:31:03,843] INFO [django.server] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[2025-09-26 12:31:03,845] INFO [myproject] ⬅️  200 GET /static/debug_toolbar/js/utils.js | ⏱️ 0.01s
+[2025-09-26 12:31:03,845] INFO [django.server] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+[2025-09-26 12:31:03,919] INFO [myproject] ➡️  GET /?format=openapi | IP: 127.0.0.1
+[2025-09-26 12:31:03,933] INFO [myproject] ➡️  GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png | IP: 127.0.0.1
+[2025-09-26 12:31:03,960] INFO [myproject] ⬅️  200 GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png | ⏱️ 0.03s
+[2025-09-26 12:31:03,960] INFO [django.server] "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+[2025-09-26 12:31:03,981] INFO [myproject] ⬅️  200 GET /?format=openapi | ⏱️ 0.06s
+[2025-09-26 12:31:03,981] INFO [django.server] "GET /?format=openapi HTTP/1.1" 200 26705
+[2025-09-26 12:31:04,223] INFO [myproject] ➡️  GET /test/api/v1/__debug__/history_sidebar/?store_id=42113fad742f48c2b064c029c6dd148c | IP: 127.0.0.1
+[2025-09-26 12:31:04,236] INFO [myproject] ⬅️  200 GET /test/api/v1/__debug__/history_sidebar/?store_id=42113fad742f48c2b064c029c6dd148c | ⏱️ 0.01s
+[2025-09-26 12:31:04,236] INFO [django.server] "GET /test/api/v1/__debug__/history_sidebar/?store_id=42113fad742f48c2b064c029c6dd148c HTTP/1.1" 200 10203
+[2025-09-26 12:31:38,567] INFO [django.utils.autoreload] /home/reza/Code/08_Ingridienta/backend/_core/settings/local.py changed, reloading.
+[2025-09-26 12:31:39,030] INFO [django.utils.autoreload] /home/reza/Code/08_Ingridienta/backend/_core/settings/local.py changed, reloading.
+[2025-09-26 12:34:20,154] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,155] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,156] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,157] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,264] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 12:34:20,264] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:34:20,280] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.13s
+[2025-09-26 12:34:20,280] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:34:20,296] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.14s
+[2025-09-26 12:34:20,296] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:34:20,313] INFO [myproject] ➡️  GET /api/v1/api/dashboard/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,316] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.16s
+[2025-09-26 12:34:20,316] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 12:34:20,519] INFO [myproject] ⬅️  200 GET /api/v1/api/dashboard/ | ⏱️ 0.21s
+[2025-09-26 12:34:20,519] INFO [django.server] "GET /api/v1/api/dashboard/ HTTP/1.1" 200 3728
+[2025-09-26 12:34:20,520] INFO [myproject] ➡️  GET /api/v1/api/dashboard/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,718] INFO [myproject] ⬅️  200 GET /api/v1/api/dashboard/ | ⏱️ 0.20s
+[2025-09-26 12:34:20,718] INFO [django.server] "GET /api/v1/api/dashboard/ HTTP/1.1" 200 3728
+[2025-09-26 12:34:20,719] INFO [myproject] ➡️  GET /api/v1/api/dashboard/ | IP: 10.10.13.12
+[2025-09-26 12:34:20,921] INFO [myproject] ⬅️  200 GET /api/v1/api/dashboard/ | ⏱️ 0.20s
+[2025-09-26 12:34:20,921] INFO [django.server] "GET /api/v1/api/dashboard/ HTTP/1.1" 200 3728
+[2025-09-26 12:34:20,922] INFO [myproject] ➡️  GET /api/v1/api/dashboard/ | IP: 10.10.13.12
+[2025-09-26 12:34:21,130] INFO [myproject] ⬅️  200 GET /api/v1/api/dashboard/ | ⏱️ 0.21s
+[2025-09-26 12:34:21,130] INFO [django.server] "GET /api/v1/api/dashboard/ HTTP/1.1" 200 3728

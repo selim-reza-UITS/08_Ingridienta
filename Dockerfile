@@ -1,19 +1,28 @@
-FROM ghcr.io/astral-sh/uv:bookworm
+FROM python:3.11.13-slim-bullseye
+
 WORKDIR /app
 
-ENV UV_LINK_MODE=hardlink 
-ENV UV_CACHE_DIR=/opt/uv-cache/
-ENV VIRTUAL_ENV=/opt/env
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# MINIMUM BUILD (RE RUNS ONLY WHEN requirements.txt is modified)
-COPY ./requirements/production.txt ./requirements.txt
+# Install system dependencies (including Redis server)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    netcat \
+    poppler-utils \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN uv venv /opt/env --python 3.11
-RUN uv pip install -r requirements.txt
+# Install Python dependencies
+RUN pip install --upgrade pip
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# FULL REPO
-COPY ./ /app
-# RUN uv pip install -r requirements.txt
-RUN chmod +x ./entrypoint.sh
-# RUNTIME CMD
-CMD ["./entrypoint.sh"]
+# Copy application files
+COPY . .
+
+# Expose the port you want the app to run on
+EXPOSE 8000
+
+CMD /bin/bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic --noinput && \
+    python manage.py runserver 0.0.0.0:8000"
