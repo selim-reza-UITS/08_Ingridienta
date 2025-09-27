@@ -2,12 +2,11 @@
 import random
 
 from django.contrib.auth import get_user_model
-from django.core.mail import send_mail
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
+from django.core.mail import EmailMultiAlternatives
 from app.accounts.models import PasswordResetOTP
 from app.accounts.serializers.password_serializers import (
     ChangePasswordSerializer,
@@ -41,12 +40,26 @@ class RequestOTPView(APIView):
         otp = str(random.randint(1234, 9999))
         PasswordResetOTP.objects.create(user=user, otp=otp)
 
-        send_mail(
-            subject="Password Reset OTP",
-            message=f"Your OTP is: {otp}",
-            from_email=EMAIL_HOST_USER,
-            recipient_list=[email],
-        )
+        # HTML email
+        subject = "Password Reset OTP"
+        from_email = EMAIL_HOST_USER
+        to = [email]
+
+        html_content = f"""
+        <html>
+        <body style="background-color:#FFFDF8; font-family: Arial, sans-serif; padding: 40px;">
+            <div style="max-width: 500px; margin: auto; background-color:#E4572E; padding: 30px; border-radius: 10px; text-align: center; color: white;">
+                <h2>Password Reset OTP</h2>
+                <p style="font-size: 18px;">Your OTP is:</p>
+                <p style="font-size: 36px; font-weight: bold; letter-spacing: 4px;">{otp}</p>
+            </div>
+        </body>
+        </html>
+        """
+
+        msg = EmailMultiAlternatives(subject, "", from_email, to)
+        msg.attach_alternative(html_content, "text/html")
+        msg.send(fail_silently=False)
 
         return Response(
             {"message": "OTP sent to your email."}, status=status.HTTP_200_OK
