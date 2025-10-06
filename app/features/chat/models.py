@@ -15,6 +15,7 @@ class ChatSession(models.Model):
     def __str__(self):
         return self.title or f"Chat {self.id}"
 
+    
 
 class ChatMessage(models.Model):
     MESSAGE_TYPES = [

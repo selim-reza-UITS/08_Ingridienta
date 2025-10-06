@@ -42,8 +42,7 @@ MIDDLEWARE += LOCAL_MIDDLEWARE_ADDED  # noqa: F405
 WSGI_APPLICATION = '_core.wsgi.application'
 #
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-if DEBUG:
-    DATABASES = LOCAL_SQLITE_CONFIG
+DATABASES = LOCAL_POSTGRESQL_CONFIG
 # 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Dhaka'

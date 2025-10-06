@@ -23,7 +23,12 @@ class ChatSessionSerializer(serializers.ModelSerializer):
         return None
 
 
+class ChatAllSessionSerializer(serializers.ModelSerializer):
+    messages = ChatMessageSerializer(many=True)  # Serialize all messages for this chat session
 
+    class Meta:
+        model = ChatSession
+        fields = ["id", "title", "created_at", "updated_at", "messages"] 
 
 class AiModelLogsSerializer(serializers.ModelSerializer):
     status = serializers.SerializerMethodField()

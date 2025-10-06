@@ -38591,3 +38591,142 @@ rest_framework_simplejwt.exceptions.TokenError: Token is invalid or expired
 [2025-09-26 14:59:25,632] INFO [myproject] ➡️  GET /api/v1/profile/ | IP: 10.10.13.12
 [2025-09-26 14:59:25,749] INFO [myproject] ⬅️  200 GET /api/v1/profile/ | ⏱️ 0.12s
 [2025-09-26 14:59:25,749] INFO [django.server] "GET /api/v1/profile/ HTTP/1.1" 200 131
+[2025-09-26 15:08:14,899] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:08:15,014] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.12s
+[2025-09-26 15:08:15,014] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:08:15,064] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:08:16,983] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 1.92s
+[2025-09-26 15:08:16,983] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 216
+[2025-09-26 15:08:18,266] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:08:23,390] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 5.12s
+[2025-09-26 15:08:23,390] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:28,993] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:28,993] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:29,094] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.10s
+[2025-09-26 15:28:29,095] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:29,113] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.12s
+[2025-09-26 15:28:29,113] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:29,147] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:28:29,275] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.13s
+[2025-09-26 15:28:29,275] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:28:29,324] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:28:29,435] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.11s
+[2025-09-26 15:28:29,435] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:28:30,241] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:30,242] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:30,364] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.12s
+[2025-09-26 15:28:30,364] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:30,383] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.14s
+[2025-09-26 15:28:30,383] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:30,415] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:28:30,527] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.11s
+[2025-09-26 15:28:30,527] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:28:30,583] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:28:30,695] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.11s
+[2025-09-26 15:28:30,695] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:28:32,041] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:32,042] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:32,148] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 15:28:32,148] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:32,166] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.12s
+[2025-09-26 15:28:32,166] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:32,209] INFO [myproject] ➡️  GET /api/v1/profile/ | IP: 10.10.13.12
+[2025-09-26 15:28:32,319] INFO [myproject] ⬅️  200 GET /api/v1/profile/ | ⏱️ 0.11s
+[2025-09-26 15:28:32,319] INFO [django.server] "GET /api/v1/profile/ HTTP/1.1" 200 131
+[2025-09-26 15:28:32,375] INFO [myproject] ➡️  GET /api/v1/profile/ | IP: 10.10.13.12
+[2025-09-26 15:28:32,486] INFO [myproject] ⬅️  200 GET /api/v1/profile/ | ⏱️ 0.11s
+[2025-09-26 15:28:32,486] INFO [django.server] "GET /api/v1/profile/ HTTP/1.1" 200 131
+[2025-09-26 15:28:34,749] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:34,864] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 15:28:34,864] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:28:34,926] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:28:36,782] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 1.86s
+[2025-09-26 15:28:36,782] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 233
+[2025-09-26 15:28:40,633] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:28:45,755] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 5.12s
+[2025-09-26 15:28:45,755] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:13,637] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:13,639] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:15,498] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:15,499] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:18,562] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:18,563] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:29:18,758] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 5.12s
+[2025-09-26 15:29:18,758] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:18,775] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.21s
+[2025-09-26 15:29:18,775] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:18,790] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.23s
+[2025-09-26 15:29:18,790] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:18,810] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 3.31s
+[2025-09-26 15:29:18,810] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:18,836] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 5.20s
+[2025-09-26 15:29:18,836] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:29:18,861] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 3.36s
+[2025-09-26 15:29:18,861] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:30:02,065] INFO [myproject] ➡️  POST /api/v1/login/ | IP: 10.10.13.12
+[2025-09-26 15:30:02,221] INFO [myproject] ⬅️  200 POST /api/v1/login/ | ⏱️ 0.16s
+[2025-09-26 15:30:02,221] INFO [django.server] "POST /api/v1/login/ HTTP/1.1" 200 655
+[2025-09-26 15:30:19,059] INFO [myproject] ➡️  OPTIONS /api/v1/login/ | IP: 10.10.13.12
+[2025-09-26 15:30:20,947] INFO [myproject] ➡️  OPTIONS /api/v1/login/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,162] INFO [myproject] ⬅️  200 OPTIONS /api/v1/login/ | ⏱️ 3.22s
+[2025-09-26 15:30:24,162] INFO [myproject] ⬅️  200 OPTIONS /api/v1/login/ | ⏱️ 5.10s
+[2025-09-26 15:30:24,162] INFO [django.server] "OPTIONS /api/v1/login/ HTTP/1.1" 200 0
+[2025-09-26 15:30:24,163] INFO [django.server] "OPTIONS /api/v1/login/ HTTP/1.1" 200 0
+[2025-09-26 15:30:24,264] INFO [myproject] ➡️  POST /api/v1/login/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,275] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,276] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,367] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.09s
+[2025-09-26 15:30:24,367] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:30:24,384] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 15:30:24,385] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:30:24,425] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,440] INFO [myproject] ⬅️  200 POST /api/v1/login/ | ⏱️ 0.18s
+[2025-09-26 15:30:24,440] INFO [django.server] "POST /api/v1/login/ HTTP/1.1" 200 655
+[2025-09-26 15:30:24,541] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.12s
+[2025-09-26 15:30:24,541] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:30:24,590] INFO [myproject] ➡️  GET /api/v1/subscription/list/ | IP: 10.10.13.12
+[2025-09-26 15:30:24,703] INFO [myproject] ⬅️  200 GET /api/v1/subscription/list/ | ⏱️ 0.11s
+[2025-09-26 15:30:24,704] INFO [django.server] "GET /api/v1/subscription/list/ HTTP/1.1" 200 534
+[2025-09-26 15:30:27,191] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:30:27,191] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:30:27,300] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.11s
+[2025-09-26 15:30:27,301] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:30:27,318] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 0.13s
+[2025-09-26 15:30:27,319] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:30:27,350] INFO [myproject] ➡️  GET /api/v1/profile/ | IP: 10.10.13.12
+[2025-09-26 15:30:27,460] INFO [myproject] ⬅️  200 GET /api/v1/profile/ | ⏱️ 0.11s
+[2025-09-26 15:30:27,460] INFO [django.server] "GET /api/v1/profile/ HTTP/1.1" 200 121
+[2025-09-26 15:30:27,514] INFO [myproject] ➡️  GET /api/v1/profile/ | IP: 10.10.13.12
+[2025-09-26 15:30:27,630] INFO [myproject] ⬅️  200 GET /api/v1/profile/ | ⏱️ 0.12s
+[2025-09-26 15:30:27,630] INFO [django.server] "GET /api/v1/profile/ HTTP/1.1" 200 121
+[2025-09-26 15:30:58,648] INFO [myproject] ➡️  POST /api/v1/get/new/token/ | IP: 10.10.13.12
+[2025-09-26 15:31:03,755] INFO [myproject] ⬅️  200 POST /api/v1/get/new/token/ | ⏱️ 5.11s
+[2025-09-26 15:31:03,755] INFO [django.server] "POST /api/v1/get/new/token/ HTTP/1.1" 200 289
+[2025-09-26 15:32:10,922] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:32:11,029] INFO [myproject] ⬅️  401 POST /api/v1/chats/send_message/ | ⏱️ 0.11s
+[2025-09-26 15:32:11,029] WARNING [django.request] Unauthorized: /api/v1/chats/send_message/
+[2025-09-26 15:32:11,029] WARNING [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 401 183
+[2025-09-26 15:32:34,079] INFO [myproject] ➡️  POST /api/v1/sign-up/ | IP: 10.10.13.12
+[2025-09-26 15:32:34,254] INFO [myproject] ⬅️  201 POST /api/v1/sign-up/ | ⏱️ 0.18s
+[2025-09-26 15:32:34,254] INFO [django.server] "POST /api/v1/sign-up/ HTTP/1.1" 201 46
+[2025-09-26 15:32:57,833] INFO [myproject] ➡️  POST /api/v1/login/ | IP: 10.10.13.12
+[2025-09-26 15:32:57,967] INFO [myproject] ⬅️  200 POST /api/v1/login/ | ⏱️ 0.13s
+[2025-09-26 15:32:57,967] INFO [django.server] "POST /api/v1/login/ HTTP/1.1" 200 660
+[2025-09-26 15:33:12,081] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:33:22,246] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 10.17s
+[2025-09-26 15:33:22,247] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 1627
+[2025-09-26 15:33:33,674] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:33:35,596] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 1.92s
+[2025-09-26 15:33:35,596] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 274
+[2025-09-26 15:33:50,371] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:33:52,578] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 2.21s
+[2025-09-26 15:33:52,579] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 350
+[2025-09-26 15:34:11,797] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:34:17,720] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 5.92s
+[2025-09-26 15:34:17,721] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 1534
+[2025-09-26 15:34:40,492] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:34:50,652] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 10.16s
+[2025-09-26 15:34:50,652] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 2020
+[2025-09-26 15:35:01,897] INFO [myproject] ➡️  POST /api/v1/chats/send_message/ | IP: 10.10.13.12
+[2025-09-26 15:35:02,009] INFO [myproject] ⬅️  200 POST /api/v1/chats/send_message/ | ⏱️ 0.11s
+[2025-09-26 15:35:02,009] INFO [django.server] "POST /api/v1/chats/send_message/ HTTP/1.1" 200 118

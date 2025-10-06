@@ -58,8 +58,8 @@ class CreateStripeCheckoutSessionView(APIView):
                     }
                 ],
                 mode="payment",  # One-time payment
-                success_url="http://localhost:5016/payment/success",  # Adjust URLs as needed
-                cancel_url="http://localhost:5016/payment/cancel",
+                success_url="http://localhost:5015/payment/success",  # Adjust URLs as needed
+                cancel_url="http://localhost:5015/payment/cancel",
                 metadata={
                     "user_id": str(user.id),
                     "package_id": package_id,

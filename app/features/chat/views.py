@@ -5,16 +5,16 @@ from rest_framework.response import Response
 from app.features.ai.ai_logic import get_recipe_response
 
 from .models import Ai_model_logs, ChatMessage, ChatSession
-from .serializers import (AiModelLogsSerializer, ChatMessageSerializer,
+from .serializers import (AiModelLogsSerializer, ChatMessageSerializer,ChatAllSessionSerializer,
                           ChatSessionSerializer)
 from app.accounts.models import UserProfile
-
+from datetime import datetime
 @api_view(["GET"])
 def list_chats(request):
     """Return chat sessions with last message preview"""
     user = request.user
     chats = ChatSession.objects.filter(user=user).order_by("-updated_at")
-    serializer = ChatSessionSerializer(chats, many=True)
+    serializer = ChatAllSessionSerializer(chats, many=True)
     return Response(serializer.data, status=200)
 
 
@@ -25,9 +25,7 @@ def send_message(request):
     profile = user.profile
     message = request.data.get("message")
     chat_id = request.data.get("chat_id")
-    title = request.data.get("title", "New Chat")
-    if profile.recipe_generate > 2 and profile.is_subs is False :
-        return Response({"error":"You have already generated your free 3 recipe. Please upgrade your plan","error_type":"plan_update_message"})
+    
     if not message:
         return Response({"error": "Message cannot be empty"}, status=400)
 
@@ -38,6 +36,8 @@ def send_message(request):
         except ChatSession.DoesNotExist:
             return Response({"error": "Chat not found"}, status=404)
     else:
+        message = request.data.get("message")
+        title = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         chat = ChatSession.objects.create(user=user, title=title)
 
     # --- Build conversation history ---
@@ -69,6 +69,8 @@ def send_message(request):
             content=result["conversation_details"]["response"]
         )
     elif result.get("response_type") == "recipe":
+        if profile.recipe_generate > 2 and profile.is_subs is False :
+            return Response({"error":"You have already generated your free 3 recipe. Please upgrade your plan","error_type":"plan_update_message"})
         # Recipe response
         recipe_details = result.get("recipe_details", {})
 
@@ -100,6 +102,8 @@ def send_message(request):
         profile.recipe_generate = int(profile.recipe_generate) + 1
         profile.save()
     elif result.get("response_type") == "error":
+        if profile.recipe_generate > 2 and profile.is_subs is False :
+            return Response({"error":"You have already generated your free 3 recipe. Please upgrade your plan","error_type":"plan_update_message"})
         error_details = result.get("error_details", {})
         
         # Create an error log in Ai_model_logs
