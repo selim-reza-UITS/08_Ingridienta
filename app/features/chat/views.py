@@ -2,13 +2,24 @@ from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
-from app.features.ai.ai_logic import get_recipe_response
+from app.features.chat.ai_func import get_recipe_response
 
 from .models import Ai_model_logs, ChatMessage, ChatSession
+<<<<<<< HEAD
 from .serializers import (AiModelLogsSerializer, ChatMessageSerializer,ChatAllSessionSerializer,
                           ChatSessionSerializer)
 from app.accounts.models import UserProfile
 from datetime import datetime
+=======
+from .serializers import (
+    AiModelLogsSerializer,
+    ChatMessageSerializer,
+    ChatSessionSerializer,
+)
+from app.accounts.models import UserProfile
+
+
+>>>>>>> ad97a4a63fa7fc1571d9a0c25a259beaa72bd399
 @api_view(["GET"])
 def list_chats(request):
     """Return chat sessions with last message preview"""
@@ -18,7 +29,6 @@ def list_chats(request):
     return Response(serializer.data, status=200)
 
 
-
 @api_view(["POST"])
 def send_message(request):
     user = request.user
@@ -26,6 +36,14 @@ def send_message(request):
     message = request.data.get("message")
     chat_id = request.data.get("chat_id")
     
+    title = request.data.get("title", "New Chat")
+    if profile.recipe_generate > 2 and profile.is_subs is False:
+        return Response(
+            {
+                "error": "You have already generated your free 3 recipe. Please upgrade your plan",
+                "error_type": "plan_update_message",
+            }
+        )
     if not message:
         return Response({"error": "Message cannot be empty"}, status=400)
 
@@ -54,10 +72,7 @@ def send_message(request):
 
     # --- Save user message ---
     ChatMessage.objects.create(
-        chat=chat,
-        sender="user",
-        message_type="conversation",
-        content=message
+        chat=chat, sender="user", message_type="conversation", content=message
     )
 
     # --- Save assistant message depending on type ---
@@ -66,7 +81,7 @@ def send_message(request):
             chat=chat,
             sender="assistant",
             message_type="conversation",
-            content=result["conversation_details"]["response"]
+            content=result["conversation_details"]["response"],
         )
     elif result.get("response_type") == "recipe":
         if profile.recipe_generate > 2 and profile.is_subs is False :
@@ -78,8 +93,12 @@ def send_message(request):
         ingredient_items = []
         for ingredient in recipe_details.get("ingredients", []):
             # Extract the item name (e.g., from "3 ripe bananas, mashed" -> "bananas")
-            item = ingredient.split(' ')[-1]  # Get the last word as the ingredient item (this is basic)
-            ingredient_items.append(item.lower())  # You can enhance this logic as needed
+            item = ingredient.split(" ")[
+                -1
+            ]  # Get the last word as the ingredient item (this is basic)
+            ingredient_items.append(
+                item.lower()
+            )  # You can enhance this logic as needed
 
         # Create an Ai_model_logs record for the recipe
         Ai_model_logs.objects.create(
@@ -97,7 +116,7 @@ def send_message(request):
             chat=chat,
             sender="assistant",
             message_type="recipe",
-            extra_data=recipe_details
+            extra_data=recipe_details,
         )
         profile.recipe_generate = int(profile.recipe_generate) + 1
         profile.save()
@@ -105,7 +124,7 @@ def send_message(request):
         if profile.recipe_generate > 2 and profile.is_subs is False :
             return Response({"error":"You have already generated your free 3 recipe. Please upgrade your plan","error_type":"plan_update_message"})
         error_details = result.get("error_details", {})
-        
+
         # Create an error log in Ai_model_logs
         Ai_model_logs.objects.create(
             email=request.user.email,
@@ -122,7 +141,7 @@ def send_message(request):
             chat=chat,
             sender="assistant",
             message_type="error",
-            extra_data=error_details
+            extra_data=error_details,
         )
     else:
         # fallback in case of unexpected AI response
@@ -130,7 +149,7 @@ def send_message(request):
             chat=chat,
             sender="assistant",
             message_type="error",
-            extra_data={"overview": "Unexpected AI response", "raw": result}
+            extra_data={"overview": "Unexpected AI response", "raw": result},
         )
 
     chat.save()  # updates updated_at
@@ -139,6 +158,7 @@ def send_message(request):
     response_data = result
     response_data["chat_id"] = chat.id
     return Response(response_data, status=200)
+
 
 @api_view(["GET"])
 def get_chat_messages(request, chat_id):
@@ -151,14 +171,10 @@ def get_chat_messages(request, chat_id):
 
     messages = chat.messages.all().order_by("created_at")
     serializer = ChatMessageSerializer(messages, many=True)
-    return Response({
-        "chat_id": chat.id,
-        "title": chat.title,
-        "messages": serializer.data
-    }, status=200)
-
-
-
+    return Response(
+        {"chat_id": chat.id, "title": chat.title, "messages": serializer.data},
+        status=200,
+    )
 
 
 class AiModelLogsListView(ListAPIView):
