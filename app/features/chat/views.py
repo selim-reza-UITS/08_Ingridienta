@@ -5,21 +5,10 @@ from rest_framework.response import Response
 from app.features.chat.ai_func import get_recipe_response
 
 from .models import Ai_model_logs, ChatMessage, ChatSession
-<<<<<<< HEAD
-from .serializers import (AiModelLogsSerializer, ChatMessageSerializer,ChatAllSessionSerializer,
-                          ChatSessionSerializer)
-from app.accounts.models import UserProfile
+from .serializers import (AiModelLogsSerializer, ChatMessageSerializer,ChatAllSessionSerializer)
 from datetime import datetime
-=======
-from .serializers import (
-    AiModelLogsSerializer,
-    ChatMessageSerializer,
-    ChatSessionSerializer,
-)
-from app.accounts.models import UserProfile
 
 
->>>>>>> ad97a4a63fa7fc1571d9a0c25a259beaa72bd399
 @api_view(["GET"])
 def list_chats(request):
     """Return chat sessions with last message preview"""
